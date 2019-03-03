@@ -5,8 +5,8 @@ These controls can be used in server side code ASP.Net pages to create dynamic 3
 
 
 Example code:
-![Example page begind code](/example/example.png)
+![Example page begind code](X3DServerControls/example/example.png)
 
 This code will return the X3D:
-![Example page begind code](/example/example2.png)
+![Example page begind code](X3DServerControls/example/example2.png)
 
