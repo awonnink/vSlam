@@ -1,2 +1,2 @@
 # vSlam
-Libaries that supports the v-Slam 3D browser
+Libaries that supports the [v-Slam 3D browser](https://www.v-slam.org)
