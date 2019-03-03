@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D4669C52-2493-4FE4-A745-6DBBD0EAFB55}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SlmControls</RootNamespace>
+    <AssemblyName>Controls</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="base\IX3DControl.cs" />
+    <Compile Include="base\X3DAssetbundle.cs" />
+    <Compile Include="base\X3DConstraint.cs" />
+    <Compile Include="base\X3DFog.cs" />
+    <Compile Include="base\X3DSpeak.cs" />
+    <Compile Include="base\X3DSceneAction.cs" />
+    <Compile Include="base\X3DMovieTexture.cs" />
+    <Compile Include="base\X3DNode.cs" />
+    <Compile Include="base\X3DNextButtonPrefab.cs" />
+    <Compile Include="base\X3DResetButtonPrefab.cs" />
+    <Compile Include="base\X3DNodePrefab.cs" />
+    <Compile Include="base\X3DNormal.cs" />
+    <Compile Include="base\X3DTextureCoordinate.cs" />
+    <Compile Include="base\X3DCoordinate.cs" />
+    <Compile Include="base\X3DIndexedTriangleSet.cs" />
+    <Compile Include="base\X3DTreeView.cs" />
+    <Compile Include="Calc.cs" />
+    <Compile Include="form\ConstrolStats.cs" />
+    <Compile Include="form\X3DCheckbox.cs" />
+    <Compile Include="graph\ChartData.cs" />
+    <Compile Include="graph\Graph.cs" />
+    <Compile Include="graph\GraphData.cs" />
+    <Compile Include="IWebSceneProps.cs" />
+    <Compile Include="mail\Mail.cs" />
+    <Compile Include="mail\MailData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="base\X3DControl.cs" />
+    <Compile Include="base\X3DGroup.cs" />
+    <Compile Include="base\X3DAppearance.cs" />
+    <Compile Include="base\X3DFontStyle.cs" />
+    <Compile Include="base\X3DInline.cs" />
+    <Compile Include="base\X3DMeta.cs" />
+    <Compile Include="base\X3DImageTexture.cs" />
+    <Compile Include="base\X3DBackGround.cs" />
+    <Compile Include="base\X3DHead.cs" />
+    <Compile Include="base\X3DSound.cs" />
+    <Compile Include="base\X3DMovement.cs" />
+    <Compile Include="base\X3DLight.cs" />
+    <Compile Include="base\X3DShape.cs" />
+    <Compile Include="base\X3DMaterial.cs" />
+    <Compile Include="base\X3DTransform.cs" />
+    <Compile Include="base\X3DViewPoint.cs" />
+    <Compile Include="base\X3DScene.cs" />
+    <Compile Include="base\X3DPage.cs" />
+    <Compile Include="SearchResultPresenter.cs" />
+    <Compile Include="Statics.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="base\X3DListView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
