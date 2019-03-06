@@ -1,9 +1,12 @@
-﻿using System.Collections;
+﻿//#define USE_DISS //***Uncomment #define when using Dissonance***
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
 //using Dissonance.Integrations.UNet_LLAPI;
+#if USE_DISS
 using Dissonance.Integrations.UNet_HLAPI;
+#endif
 using UnityEngine.Networking;
 using Newtonsoft.Json;
 using UnityGLTF;
@@ -43,16 +46,21 @@ namespace Slam
         public string AvatarAction = "i";
         Downloading downloading = new Downloading();
         IDeviceManager _deviceManager = null;
+#if USE_DISS
+
         Dissonance.VoiceBroadcastTrigger voiceBroadCastTrigger = null;
         Dissonance.VoiceReceiptTrigger voiceReceiptTrigger = null;
         Dissonance.DissonanceComms dissonanceComms = null;
+#endif
         bool HasConversation = true;
         GameObject textToSpeechGO = null;
         HoloToolkit.Unity.TextToSpeech txtToSpeech;
         GameObject msgBox = null;
         GameObject myAvatarPresentation;
         public GameObject sceneRotator=null;
+#if USE_DISS
         Dissonance.RoomMembership roomMembership;
+#endif
         FogSettings CurrentFogSettings = null;
         int ActiveNotifications = 0;
 
@@ -147,8 +155,8 @@ namespace Slam
         float realCamY;
         float mrCameraCheckTime = 0;
 
-        #endregion Fields
-        #region Properties
+#endregion Fields
+#region Properties
         Transform handdraggable = null;
         public Transform Handdraggable
         {
@@ -262,6 +270,7 @@ namespace Slam
         }
         public bool micMute
         {
+#if USE_DISS
             get
             {
                 return voiceBroadCastTrigger != null ? !voiceBroadCastTrigger.enabled : true;
@@ -278,6 +287,10 @@ namespace Slam
                 }
 
             }
+#else
+            get { return true; }
+            set { }
+#endif 
         }
         public string CommunityInput
         {
@@ -338,14 +351,16 @@ namespace Slam
         {
             get
             {
+#if USE_DISS
                 if(dissonanceComms!=null)
                 {
                     return dissonanceComms.LocalPlayerName;
                 }
+#endif
                 return null;
             }
         }
-        #endregion Properties
+#endregion Properties
 
         void Start()
         {
@@ -499,7 +514,7 @@ namespace Slam
             }
         }
 
-        #region External typing
+#region External typing
         public void StartTyping(string startText)
         {
             if (!string.IsNullOrEmpty(DeviceManager.PresentationGuid))
@@ -578,8 +593,8 @@ namespace Slam
                 }
             }
         }
-        #endregion external typing
-        #region Various
+#endregion external typing
+#region Various
         IEnumerator LoadGLTF(string url, Transform parent)
         {
             GLTFSceneImporter sceneImporter = null;
@@ -1146,8 +1161,8 @@ namespace Slam
             }
             return false;
         }
-        #endregion Various
-        #region speech
+#endregion Various
+#region speech
         IEnumerator InitiateSoundTools(float wait)
         {
             yield return new WaitForSeconds(wait);
@@ -1338,6 +1353,7 @@ namespace Slam
         }
        public void CheckSoundInitiated()
         {
+#if USE_DISS
             if (dissonanceComms==null)
             {
                 var dissonanceGO = GameObject.Find(Constants.DissonanceSetup);
@@ -1370,9 +1386,11 @@ namespace Slam
                     //micMute = false;
                 }
             }
+#endif
         }
 
-        private void DissonanceComms_OnPlayerStoppedSpeaking(Dissonance.VoicePlayerState obj)
+#if USE_DISS
+            private void DissonanceComms_OnPlayerStoppedSpeaking(Dissonance.VoicePlayerState obj)
         {
            // HasConversation = false;
         }
@@ -1381,6 +1399,8 @@ namespace Slam
         {
             HasConversation=true;
         }
+#endif
+
         private void AddSpeekIndicator(Transform avatar)
         {
             if (!avatar.FindDeepChild(Constants.speechIndicatorName))
@@ -1395,7 +1415,8 @@ namespace Slam
         }
         private void IsTalking()
         {
-            if (dissonanceComms != null)
+#if USE_DISS
+           if (dissonanceComms != null)
             {
                 foreach (var player in dissonanceComms.Players)
                 {
@@ -1414,14 +1435,19 @@ namespace Slam
                     }
                 }
             }
+#endif
         }
         public string chatroom = null;
+#if USE_DISS
         Dissonance.RoomChannel channel;
+#endif
         public void StartSpeak()
         {
             CheckSoundInitiated();
+#if USE_DISS
             if (chatroom != null && dissonanceComms != null)
             {
+
 #if UNITY_STANDALONE_WIN || UNITY_WSA
                 if (speechInputSource != null)
                 {
@@ -1443,6 +1469,7 @@ namespace Slam
                 //voiceReceiptTrigger.enabled = true;
                 micMute = false;
             }
+#endif
         }
         public void StopSpeak()
         {
@@ -1498,8 +1525,8 @@ namespace Slam
             }
             return RecordingState.NotSupported;
         }
-        #endregion speech
-        #region asset bundles
+#endregion speech
+#region asset bundles
         void CheckAssetBundles()
         {
             if(assetBundleDownloads.Count>0)
@@ -1588,8 +1615,8 @@ namespace Slam
             ShowWaitCursor(false, DownloadType.AssetBundle);
 
         }
-        #endregion asset bundles
-        #region messagebox, notification
+#endregion asset bundles
+#region messagebox, notification
         public void MessageOKAction()
         {
             switch(messageOkType)
@@ -1694,8 +1721,8 @@ namespace Slam
             }
             //notification.gameObject.SetActive(false);
         }
-        #endregion messagebox, notification
-        #region waitcursor
+#endregion messagebox, notification
+#region waitcursor
         public void ShowWaitCursor(bool show = true, DownloadType downloadtype= DownloadType.Xml)
         {
             if (waitCursor != null)
@@ -1751,8 +1778,8 @@ namespace Slam
             waitCursor.SetActive(show);
 
         }
-        #endregion waitcursor
-        #region textinput, menu
+#endregion waitcursor
+#region textinput, menu
         GameObject activeTextInput = null;
         public void OpenMenuForTextInput(GameObject go)
         {
@@ -2080,8 +2107,8 @@ namespace Slam
                 }
             }
         }
-        #endregion  textinput, menu
-        #region Parse
+#endregion  textinput, menu
+#region Parse
         public void Parse(string url, Target target = Target._blank, Transform transform = null, bool showWaitCursor=true)
         {
             if (target != Target._2D && !string.IsNullOrEmpty(url))
@@ -2320,7 +2347,8 @@ namespace Slam
                 if(!UrlHandler.AtHome )
                 {
                     CheckSoundInitiated();
-                    if (voiceBroadCastTrigger != null && voiceReceiptTrigger != null)
+#if USE_DISS
+                   if (voiceBroadCastTrigger != null && voiceReceiptTrigger != null)
                     {
                         chatroom = UrlHandler.GetRoomFromUrl(url);
                         dissonanceComms.Rooms.Leave(roomMembership);
@@ -2330,6 +2358,7 @@ namespace Slam
                         voiceReceiptTrigger.RoomName = chatroom;
 
                     }
+#endif
                 }
                 if(!micMute)
                 {
@@ -5841,8 +5870,8 @@ namespace Slam
             CheckDEF<FontStyle>(node, ref fontStyle);
             return fontStyle;
         }
-        #endregion Parse
-        #region Helperfuctions
+#endregion Parse
+#region Helperfuctions
         List<string> ParseStringParts(string text)
         {
             List<string> lst = new List<string>();
@@ -6080,8 +6109,8 @@ namespace Slam
         {
             return DeviceManager.Name == CallingDevices.MR.ToString();
         }
-        #endregion Helperfuctions
-        #region Avatars
+#endregion Helperfuctions
+#region Avatars
         public Vector3 AvatarRelPosition(Vector3 pos)
         {
             return Camera.main.transform.position - pos;
@@ -6134,7 +6163,9 @@ namespace Slam
                 avScrpt.AvatarId = id;
                 avScrpt.AvatarDissId = dissGuid;
                 avScrpt.NickName = nickN;
+#if USE_DISS
                 var player = avatarParent.AddComponent<LlapiPlayer>();
+#endif
                 AddSpeekIndicator(tgo.GameObject.transform);
                 //add avatar
                 Avatarcorrection avCorr = null;
@@ -6145,7 +6176,9 @@ namespace Slam
                 CheckAvatarCorrection(avatar, avCorr);
                if (isOwnAvatar)
                 {
+#if USE_DISS
                     player.Type = Dissonance.NetworkPlayerType.Local;
+#endif
                     avatarParent.transform.position = new Vector3(0, -Constants.cameraHeight, 0);
                     avatarParent.transform.rotation = Quaternion.identity * Quaternion.Euler(0, 180, 0);
                     avScrpt.IsOwnAvatar = true;
@@ -6188,11 +6221,13 @@ namespace Slam
                 }
                 if (!string.IsNullOrEmpty(dissGuid))
                 {
+#if USE_DISS
                     var player = tgo.GameObject.GetComponent<LlapiPlayer>();
                     if (player != null && string.IsNullOrEmpty(player.PlayerId))
                     {
                         player.SetPlayerId(dissGuid);
                     }
+#endif
                 }
                 isNew = false;
             }
@@ -6811,6 +6846,7 @@ namespace Slam
         }
         public bool ToggleMute(string playerId)
         {
+#if USE_DISS
             if(dissonanceComms!=null)
             {
                 var pl = dissonanceComms.FindPlayer(playerId);
@@ -6820,6 +6856,7 @@ namespace Slam
                     return pl.Volume == 0;
                 }
             }
+#endif
             return false;
         }
 #endregion Avatars

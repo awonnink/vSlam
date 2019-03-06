@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//#define USE_DISS //***Uncomment #define when using Dissonance***
+#if USE_DISS
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Dissonance;
@@ -82,3 +84,4 @@ public class LlapiPlayer : MonoBehaviour, IDissonancePlayer
 		
 	}
 }
+#endif
