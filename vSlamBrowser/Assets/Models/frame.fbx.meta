@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: a759ecf4942459a409446cbdc6b9ee2b
+timeCreated: 1501605801
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: body
+    100004: Circle
+    100006: Circle.001
+    100008: Cube
+    100010: Cube.001
+    100012: FoorL
+    100014: FoorL_end
+    100016: foorR
+    100018: foorR_end
+    100020: //RootNode
+    100022: handL
+    100024: handL_end
+    100026: handR
+    100028: handR_end
+    100030: head
+    100032: head_end
+    100034: hips
+    100036: lowerArmL
+    100038: LowerLegL
+    100040: LowerLegR
+    100042: nose
+    100044: nose.001
+    100046: nose.002
+    100048: nose.003
+    100050: nose.004
+    100052: nose.005
+    100054: nose.006
+    100056: nose.007
+    100058: nose.008
+    100060: nose.009
+    100062: nose.010
+    100064: nose.011
+    100066: nose.012
+    100068: nose.013
+    100070: nose.014
+    100072: nose.015
+    100074: nose.016
+    100076: nose.017
+    100078: nose.018
+    100080: nose.019
+    100082: upperarmL
+    100084: upperArmR
+    100086: upperarmR
+    100088: UpperLegL
+    100090: UpperLegR
+    400000: Armature
+    400002: body
+    400004: Circle
+    400006: Circle.001
+    400008: Cube
+    400010: Cube.001
+    400012: FoorL
+    400014: FoorL_end
+    400016: foorR
+    400018: foorR_end
+    400020: //RootNode
+    400022: handL
+    400024: handL_end
+    400026: handR
+    400028: handR_end
+    400030: head
+    400032: head_end
+    400034: hips
+    400036: lowerArmL
+    400038: LowerLegL
+    400040: LowerLegR
+    400042: nose
+    400044: nose.001
+    400046: nose.002
+    400048: nose.003
+    400050: nose.004
+    400052: nose.005
+    400054: nose.006
+    400056: nose.007
+    400058: nose.008
+    400060: nose.009
+    400062: nose.010
+    400064: nose.011
+    400066: nose.012
+    400068: nose.013
+    400070: nose.014
+    400072: nose.015
+    400074: nose.016
+    400076: nose.017
+    400078: nose.018
+    400080: nose.019
+    400082: upperarmL
+    400084: upperArmR
+    400086: upperarmR
+    400088: UpperLegL
+    400090: UpperLegR
+    2300000: Circle
+    2300002: Circle.001
+    2300004: Cube
+    2300006: Cube.001
+    2300008: //RootNode
+    3300000: Circle
+    3300002: Circle.001
+    3300004: Cube
+    3300006: Cube.001
+    3300008: //RootNode
+    4300000: Circle.001
+    4300002: Cube.001
+    4300004: Circle
+    4300006: Cube
+    4300008: nose.019
+    4300010: nose.018
+    4300012: nose.017
+    4300014: nose.016
+    4300016: nose.015
+    4300018: nose.014
+    4300020: nose.013
+    4300022: nose.012
+    4300024: nose.011
+    4300026: nose.010
+    4300028: nose.009
+    4300030: nose.008
+    4300032: nose.007
+    4300034: nose.006
+    4300036: nose.005
+    4300038: nose.004
+    4300040: nose.003
+    4300042: nose.002
+    4300044: nose.001
+    4300046: nose
+    7400000: Armature|Idle
+    9500000: //RootNode
+    13700000: nose
+    13700002: nose.001
+    13700004: nose.002
+    13700006: nose.003
+    13700008: nose.004
+    13700010: nose.005
+    13700012: nose.006
+    13700014: nose.007
+    13700016: nose.008
+    13700018: nose.009
+    13700020: nose.010
+    13700022: nose.011
+    13700024: nose.012
+    13700026: nose.013
+    13700028: nose.014
+    13700030: nose.015
+    13700032: nose.016
+    13700034: nose.017
+    13700036: nose.018
+    13700038: nose.019
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

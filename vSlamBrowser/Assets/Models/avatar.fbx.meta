@@ -1,0 +1,525 @@
+fileFormatVersion: 2
+guid: b23ed754397f2104088b2ccebeec2d73
+timeCreated: 1500241048
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armature
+    100002: //RootNode
+    100004: body
+    100006: FoorL
+    100008: FoorL_end
+    100010: foorR
+    100012: foorR_end
+    100014: handL
+    100016: handL_end
+    100018: handR
+    100020: handR_end
+    100022: head
+    100024: head_end
+    100026: hips
+    100028: lowerArmL
+    100030: LowerLegL
+    100032: LowerLegR
+    100034: nose
+    100036: upperarmL
+    100038: upperArmR
+    100040: upperarmR
+    100042: UpperLegL
+    100044: UpperLegR
+    100046: nose.001
+    100048: nose.002
+    100050: nose.003
+    100052: nose.004
+    100054: nose.005
+    100056: nose.006
+    100058: nose.007
+    100060: nose.008
+    100062: nose.009
+    100064: nose.010
+    100066: nose.011
+    100068: nose.012
+    100070: nose.013
+    100072: nose.014
+    100074: nose.015
+    100076: nose.016
+    100078: nose.017
+    100080: nose.018
+    100082: nose.019
+    100084: Circle
+    100086: Circle.001
+    100088: Circle.002
+    100090: Circle.003
+    100092: Cone
+    100094: Cube
+    100096: Cube.001
+    100098: Cube.002
+    100100: Cube.007
+    100102: Cube.015
+    100104: neck_01
+    100106: neck_01_end
+    100108: Sun
+    400000: Armature
+    400002: //RootNode
+    400004: body
+    400006: FoorL
+    400008: FoorL_end
+    400010: foorR
+    400012: foorR_end
+    400014: handL
+    400016: handL_end
+    400018: handR
+    400020: handR_end
+    400022: head
+    400024: head_end
+    400026: hips
+    400028: lowerArmL
+    400030: LowerLegL
+    400032: LowerLegR
+    400034: nose
+    400036: upperarmL
+    400038: upperArmR
+    400040: upperarmR
+    400042: UpperLegL
+    400044: UpperLegR
+    400046: nose.001
+    400048: nose.002
+    400050: nose.003
+    400052: nose.004
+    400054: nose.005
+    400056: nose.006
+    400058: nose.007
+    400060: nose.008
+    400062: nose.009
+    400064: nose.010
+    400066: nose.011
+    400068: nose.012
+    400070: nose.013
+    400072: nose.014
+    400074: nose.015
+    400076: nose.016
+    400078: nose.017
+    400080: nose.018
+    400082: nose.019
+    400084: Circle
+    400086: Circle.001
+    400088: Circle.002
+    400090: Circle.003
+    400092: Cone
+    400094: Cube
+    400096: Cube.001
+    400098: Cube.002
+    400100: Cube.007
+    400102: Cube.015
+    400104: neck_01
+    400106: neck_01_end
+    400108: Sun
+    2300000: Circle
+    2300002: Circle.001
+    2300004: Circle.002
+    2300006: Circle.003
+    2300008: Cone
+    2300010: Cube
+    2300012: Cube.001
+    2300014: Cube.002
+    2300016: Cube.007
+    2300018: Cube.015
+    2300020: //RootNode
+    3300000: Circle
+    3300002: Circle.001
+    3300004: Circle.002
+    3300006: Circle.003
+    3300008: Cone
+    3300010: Cube
+    3300012: Cube.001
+    3300014: Cube.002
+    3300016: Cube.007
+    3300018: Cube.015
+    3300020: //RootNode
+    4300000: nose
+    4300002: nose.019
+    4300004: nose.018
+    4300006: nose.017
+    4300008: nose.016
+    4300010: nose.015
+    4300012: nose.014
+    4300014: nose.013
+    4300016: nose.012
+    4300018: nose.011
+    4300020: nose.010
+    4300022: nose.009
+    4300024: nose.008
+    4300026: nose.007
+    4300028: nose.006
+    4300030: nose.005
+    4300032: nose.004
+    4300034: nose.003
+    4300036: nose.002
+    4300038: nose.001
+    4300040: Cube.007
+    4300042: Cube.002
+    4300044: Cube.015
+    4300046: Cone
+    4300048: Circle.003
+    4300050: Circle.002
+    4300052: Circle.001
+    4300054: Cube.001
+    4300056: Circle
+    4300058: Cube
+    7400000: Armature|Idle
+    7400002: Sit
+    7400004: Armature|Walk
+    7400006: Armature|Sit
+    7400008: Armature|Sit.001
+    9500000: //RootNode
+    13700000: nose
+    13700002: nose.001
+    13700004: nose.002
+    13700006: nose.003
+    13700008: nose.004
+    13700010: nose.005
+    13700012: nose.006
+    13700014: nose.007
+    13700016: nose.008
+    13700018: nose.009
+    13700020: nose.010
+    13700022: nose.011
+    13700024: nose.012
+    13700026: nose.013
+    13700028: nose.014
+    13700030: nose.015
+    13700032: nose.016
+    13700034: nose.017
+    13700036: nose.018
+    13700038: nose.019
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: arm
+    second: {fileID: 2100000, guid: 40d38c3ee209e0b47a959f9b3205c7e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body
+    second: {fileID: 2100000, guid: d4fc8f3356f05684b9ebbed0705c3bc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: foot
+    second: {fileID: 2100000, guid: 2b9eade02a01bd647a5cbaf3a8fa99e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hand
+    second: {fileID: 2100000, guid: 3dc857d1a22ba1c4f84eeecbae3be75a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: head.001
+    second: {fileID: 2100000, guid: 2da8b1a76e0e3a84c9d91982fc22da96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leg
+    second: {fileID: 2100000, guid: 8fa309562d4efe044b9138efdcb3694c, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Idle
+      takeName: Armature|Idle
+      firstFrame: 0
+      lastFrame: 249
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/body
+        weight: 1
+      - path: Armature/body/head
+        weight: 1
+      - path: Armature/body/head/head_end
+        weight: 1
+      - path: Armature/body/hips
+        weight: 1
+      - path: Armature/body/hips/UpperLegL
+        weight: 1
+      - path: Armature/body/hips/UpperLegL/LowerLegL
+        weight: 1
+      - path: Armature/body/hips/UpperLegL/LowerLegL/FoorL
+        weight: 1
+      - path: Armature/body/hips/UpperLegL/LowerLegL/FoorL/FoorL_end
+        weight: 1
+      - path: Armature/body/hips/UpperLegR
+        weight: 1
+      - path: Armature/body/hips/UpperLegR/LowerLegR
+        weight: 1
+      - path: Armature/body/hips/UpperLegR/LowerLegR/foorR
+        weight: 1
+      - path: Armature/body/hips/UpperLegR/LowerLegR/foorR/foorR_end
+        weight: 1
+      - path: Armature/body/upperarmR
+        weight: 1
+      - path: Armature/body/upperarmR/upperarmL
+        weight: 1
+      - path: Armature/body/upperarmR/upperarmL/handR
+        weight: 1
+      - path: Armature/body/upperarmR/upperarmL/handR/handR_end
+        weight: 1
+      - path: Armature/body/upperArmR
+        weight: 1
+      - path: Armature/body/upperArmR/lowerArmL
+        weight: 1
+      - path: Armature/body/upperArmR/lowerArmL/handL
+        weight: 1
+      - path: Armature/body/upperArmR/lowerArmL/handL/handL_end
+        weight: 1
+      - path: nose
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Sit.001
+      takeName: Armature|Sit.001
+      firstFrame: 0
+      lastFrame: 258
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/body
+        weight: 1
+      - path: Armature/body/head
+        weight: 1
+      - path: Armature/body/head/head_end
+        weight: 1
+      - path: Armature/body/hips
+        weight: 1
+      - path: Armature/body/hips/UpperLegL
+        weight: 1
+      - path: Armature/body/hips/UpperLegL/LowerLegL
+        weight: 1
+      - path: Armature/body/hips/UpperLegL/LowerLegL/FoorL
+        weight: 1
+      - path: Armature/body/hips/UpperLegL/LowerLegL/FoorL/FoorL_end
+        weight: 1
+      - path: Armature/body/hips/UpperLegR
+        weight: 1
+      - path: Armature/body/hips/UpperLegR/LowerLegR
+        weight: 1
+      - path: Armature/body/hips/UpperLegR/LowerLegR/foorR
+        weight: 1
+      - path: Armature/body/hips/UpperLegR/LowerLegR/foorR/foorR_end
+        weight: 1
+      - path: Armature/body/upperarmR
+        weight: 1
+      - path: Armature/body/upperarmR/upperarmL
+        weight: 1
+      - path: Armature/body/upperarmR/upperarmL/handR
+        weight: 1
+      - path: Armature/body/upperarmR/upperarmL/handR/handR_end
+        weight: 1
+      - path: Armature/body/upperArmR
+        weight: 1
+      - path: Armature/body/upperArmR/lowerArmL
+        weight: 1
+      - path: Armature/body/upperArmR/lowerArmL/handL
+        weight: 1
+      - path: Armature/body/upperArmR/lowerArmL/handL/handL_end
+        weight: 1
+      - path: nose
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Walk
+      takeName: Armature|Walk
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/body
+        weight: 1
+      - path: Armature/body/head
+        weight: 1
+      - path: Armature/body/head/head_end
+        weight: 1
+      - path: Armature/body/hips
+        weight: 1
+      - path: Armature/body/hips/UpperLegL
+        weight: 1
+      - path: Armature/body/hips/UpperLegL/LowerLegL
+        weight: 1
+      - path: Armature/body/hips/UpperLegL/LowerLegL/FoorL
+        weight: 1
+      - path: Armature/body/hips/UpperLegL/LowerLegL/FoorL/FoorL_end
+        weight: 1
+      - path: Armature/body/hips/UpperLegR
+        weight: 1
+      - path: Armature/body/hips/UpperLegR/LowerLegR
+        weight: 1
+      - path: Armature/body/hips/UpperLegR/LowerLegR/foorR
+        weight: 1
+      - path: Armature/body/hips/UpperLegR/LowerLegR/foorR/foorR_end
+        weight: 1
+      - path: Armature/body/upperarmR
+        weight: 1
+      - path: Armature/body/upperarmR/upperarmL
+        weight: 1
+      - path: Armature/body/upperarmR/upperarmL/handR
+        weight: 1
+      - path: Armature/body/upperarmR/upperarmL/handR/handR_end
+        weight: 1
+      - path: Armature/body/upperArmR
+        weight: 1
+      - path: Armature/body/upperArmR/lowerArmL
+        weight: 1
+      - path: Armature/body/upperArmR/lowerArmL/handL
+        weight: 1
+      - path: Armature/body/upperArmR/lowerArmL/handL/handL_end
+        weight: 1
+      - path: nose
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

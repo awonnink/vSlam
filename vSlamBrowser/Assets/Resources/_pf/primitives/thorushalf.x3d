@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE X3D PUBLIC 'http://www.web3d.org/specifications/x3d-3.3.dtd' ''>
+<X3D  xmlns:slm='http://www.v-slam.org'>
+  <Scene>
+    <Transform name='smouthcube'>
+      <Shape>
+        <slm:Prefab name='thorushalf' group='primitives'/>
+        <Appearance>
+          <Material DEF='MaterialPrimitive' diffuseColor='0.2 0.6 0.6'></Material>
+          <slm:Movement rotate="0.03 0.8 0"/>
+        </Appearance>
+      </Shape>
+    </Transform>
+  </Scene>
+</X3D>

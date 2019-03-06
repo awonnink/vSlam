@@ -1,0 +1,145 @@
+fileFormatVersion: 2
+guid: c17b1dc9bcd37bb4eb6f00705c0960c4
+timeCreated: 1510785289
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Camera
+    100004: glass
+    100006: //RootNode
+    100008: Lamp
+    100010: Neck_01
+    100012: Neck_01_end
+    100014: outerBand
+    100016: Sphere.000
+    100018: Sphere.001
+    100020: Sphere.003
+    100022: spine
+    100024: neck_01
+    100026: neck_01_end
+    400000: Armature
+    400002: Camera
+    400004: glass
+    400006: //RootNode
+    400008: Lamp
+    400010: Neck_01
+    400012: Neck_01_end
+    400014: outerBand
+    400016: Sphere.000
+    400018: Sphere.001
+    400020: Sphere.003
+    400022: spine
+    400024: neck_01
+    400026: neck_01_end
+    2000000: Camera
+    2300000: glass
+    2300002: outerBand
+    2300004: Sphere.000
+    2300006: Sphere.003
+    3300000: glass
+    3300002: outerBand
+    3300004: Sphere.000
+    3300006: Sphere.003
+    4300000: Sphere.001
+    4300002: Sphere.000
+    4300004: Sphere.003
+    4300006: glass
+    4300008: outerBand
+    9500000: //RootNode
+    10800000: Lamp
+    13700000: Sphere.001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: band
+    second: {fileID: 2100000, guid: be754596107bc3540a0b32a2a1a3dcb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: cbcb7b717390553499cd7f0878df359e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rubber
+    second: {fileID: 2100000, guid: cb673cf4e654137429b108617313b252, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
