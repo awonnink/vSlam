@@ -62,7 +62,8 @@ namespace Slam
         {
             string url = Constants.BaseHomeUrl;
 #if UNITY_EDITOR
-    url = Constants.DevelopBaseHomeUrl;
+            //***Uncomment to use development server***:
+   // url = Constants.DevelopBaseHomeUrl;
 #endif
             return url;
         }
