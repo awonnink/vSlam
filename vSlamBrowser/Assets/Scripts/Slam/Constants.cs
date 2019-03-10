@@ -11,7 +11,7 @@ namespace Slam
         public const string Slamkey = "ndfhdsfUSCcsaaffbg743&^56d77qw712";
         public const string BaseHomeUrl = "https://www.v-slam.org/";
         public const string BaseHomeUrlPrev = "https://www.v-slam.org/prev/";
-        public const string DevelopBaseHomeUrl = "http://localhost:59143/";
+        public const string DevelopBaseHomeUrl = "http://localhost:56319/";
         public const string TyperUrl = "https://www.v-slam.org/sharescreenservice/photos";
         public const string DeveloperTyperUrl = "http://localhost:2557/photos";
 

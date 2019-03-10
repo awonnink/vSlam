@@ -1,0 +1,1310 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE X3D PUBLIC 'http://www.web3d.org/specifications/x3d-3.3.dtd' ''>
+<X3D  xmlns:slm='http://www.v-slam.org'>
+  <Scene>
+    <Viewpoint DEF='ViewUpClose' position='0 1 5'/>
+    <Background skyBox="sky5X2" Name="skyBox"/>
+    <Transform name='cliffHouse' translation="-2 0 -5.536" scale="1 1 1" slm:eulerrotation='0 90 0'>
+        <Transform name='landscape'>
+           <Transform name='landscape' scale='10 10 10' translation='1.17 -0.36 0'>
+            <Shape>
+              <slm:prefab group='environment' item='landscape1' slm:walkfloor='0'/>
+            </Shape>
+          </Transform>
+
+          <Transform name='socker' translation='0.3 0.059 -0.5' scale='0.3 0.3 0.3' >
+            <Shape>
+              <Sphere slm:href='exp/cliffhouse/soccerSound.x3dx#soccerSound' slm:target='_self'/>
+              <Appearance>
+                <Material USE='MaterialpoolballWhite' diffuseColor='1 1 1'/>
+                <ImageTexture url='"../../images/soccer.png"' />
+                <slm:Movement  kinetic='17' bounciness='1'/>
+              </Appearance>
+            </Shape>
+          </Transform>
+
+
+          <Transform name='soccerSound'>
+            
+          </Transform>
+
+
+          <Transform name='tree' scale='1 1 1' translation='4 -2.58 20'>
+            <Shape>
+              <slm:prefab group='plants' item='tree'/>
+            </Shape>
+          </Transform>
+          <Transform name='forest' scale='1 1 1' translation='10 -3.46 -50'>
+            <Transform name='tree' scale='1 1 1' translation='0 0 0' slm:eulerrotation='0 0 0 '>
+              <Shape>
+                <slm:prefab group='plants' item='tree'/>
+              </Shape>
+            </Transform>
+            <Transform name='tree' scale='1 1.3 1' translation='7 0 0' slm:eulerrotation='0 50 0 '>
+              <Shape>
+                <slm:prefab group='plants' item='tree'/>
+              </Shape>
+            </Transform>
+            <Transform name='tree' scale='1.1 1.1 1.1' translation='-3 0 8' slm:eulerrotation='0 150 0 '>
+              <Shape>
+                <slm:prefab group='plants' item='tree'/>
+              </Shape>
+            </Transform>
+            <Transform name='tree' scale='1.1 1.4 1.1' translation='6 0 -3' slm:eulerrotation='0 -50 0 '>
+              <Shape>
+                <slm:prefab group='plants' item='tree'/>
+              </Shape>
+            </Transform>
+            <Transform name='tree' scale='1.1 0.7 1.1' translation='-10 0 -13' slm:eulerrotation='0 -70 0 '>
+              <Shape>
+                <slm:prefab group='plants' item='tree'/>
+              </Shape>
+            </Transform>
+          </Transform>
+          <Transform name='forest' scale='1 1 1' translation='10 -3.46 50'>
+            <Transform name='tree' scale='1 1 1' translation='0 0 0' slm:eulerrotation='0 0 0 '>
+              <Shape>
+                <slm:prefab group='plants' item='tree'/>
+              </Shape>
+            </Transform>
+            <Transform name='tree' scale='1 1.3 1' translation='7 0 0' slm:eulerrotation='0 50 0 '>
+              <Shape>
+                <slm:prefab group='plants' item='tree'/>
+              </Shape>
+            </Transform>
+            <Transform name='tree' scale='1.1 1.1 1.1' translation='-3 0 8' slm:eulerrotation='0 150 0 '>
+              <Shape>
+                <slm:prefab group='plants' item='tree'/>
+              </Shape>
+            </Transform>
+            <Transform name='tree' scale='1.1 1.4 1.1' translation='6 0 -3' slm:eulerrotation='0 -50 0 '>
+              <Shape>
+                <slm:prefab group='plants' item='tree'/>
+              </Shape>
+            </Transform>
+            <Transform name='tree' scale='1.1 0.7 1.1' translation='-10 0 -13' slm:eulerrotation='0 -70 0 '>
+              <Shape>
+                <slm:prefab group='plants' item='tree'/>
+              </Shape>
+            </Transform>
+          </Transform>
+
+
+          <Transform name='rock' scale='1 1 1' translation='12.87 0 0'>
+            <Shape>
+              <slm:prefab group='environment' item='rock1'/>
+
+            </Shape>
+          </Transform>
+           <Transform name='rock' scale='2 0.9 1.7' translation='13 1.2 -5.9' slm:eulerrotation='0 38 28'>
+            <Shape>
+              <slm:prefab group='environment' item='rock1'/>
+
+            </Shape>
+          </Transform>
+           <Transform name='flatstones'  translation='-2.3 -3 10.2' >
+              <Transform name='grit' scale='2.6 0.05 1' translation='0.2 0 3.08' slm:eulerrotation='0 -88 0'>
+                <Shape>
+                  <slm:prefab group='environment' item='rock1' slm:walkfloor='0'/>
+                  <Appearance>
+                    <Material DEF='grit' diffuseColor='0.5 0.5 0.5'  textureScale='10 20' />
+                   <ImageTexture url='"grit.jpg"' />
+                  </Appearance>
+                </Shape>
+              </Transform>
+               <Transform name='flatstones' scale='0.7 0.01 0.5' translation='0 0.1 0' slm:eulerrotation='0 0 0'>
+                <Shape>
+                  <slm:prefab group='environment' item='rock1' slm:walkfloor='0'/>
+                  <ImageTexture url='"marbleTileclose.png"' />
+                </Shape>
+              </Transform>
+              <Transform name='flatstones' scale='0.7 0.04 0.5' translation='0.2 0.08 3.08' slm:eulerrotation='0 -88 0'>
+                <Shape>
+                  <slm:prefab group='environment' item='rock1' slm:walkfloor='0'/>
+                  <ImageTexture url='"marbleTileclose.png"' />
+                </Shape>
+              </Transform>
+               <Transform name='flatstones' scale='0.7 0.12 0.5' translation='0.2 0 6.08' slm:eulerrotation='0 46 0'>
+                <Shape>
+                  <slm:prefab group='environment' item='rock1' slm:walkfloor='0'/>
+                  <ImageTexture url='"marbleTileclose.png"' />
+                </Shape>
+              </Transform>
+          </Transform>
+ 
+           <Transform name='flatstones'  translation='-2.17 -3.06 16.7'  slm:eulerrotation='-5 -26 -4'>
+              <Transform name='grit' scale='2.6 0.05 1' translation='0.2 0 3.08' slm:eulerrotation='0 -88 0'>
+                <Shape>
+                  <slm:prefab group='environment' item='rock1' slm:walkfloor='0'/>
+                  <Appearance>
+                    <Material DEF='grit' diffuseColor='0.5 0.5 0.5'  textureScale='10 20' />
+                   <ImageTexture url='"grit.jpg"' />
+                  </Appearance>
+                </Shape>
+              </Transform>
+               <Transform name='flatstones' scale='0.7 0.01 0.5' translation='0 0.1 0' slm:eulerrotation='0 0 0'>
+                <Shape>
+                  <slm:prefab group='environment' item='rock1' slm:walkfloor='0'/>
+                  <ImageTexture url='"marbleTileclose.png"' />
+                </Shape>
+              </Transform>
+              <Transform name='flatstones' scale='0.7 0.04 0.5' translation='0.2 0.08 3.08' slm:eulerrotation='0 -88 0'>
+                <Shape>
+                  <slm:prefab group='environment' item='rock1' slm:walkfloor='0'/>
+                  <ImageTexture url='"marbleTileclose.png"' />
+                </Shape>
+              </Transform>
+               <Transform name='flatstones' scale='0.7 0.12 0.5' translation='0.2 0 6.08' slm:eulerrotation='0 46 0'>
+                <Shape>
+                  <slm:prefab group='environment' item='rock1' slm:walkfloor='0'/>
+                  <ImageTexture url='"marbleTileclose.png"' />
+                </Shape>
+              </Transform>
+          </Transform>
+           <Transform name='flatstones'  translation='-5.85 -2.27 24.3'  slm:eulerrotation='-8.5 -38 -3.5'>
+              <Transform name='grit' scale='2.6 0.05 1' translation='0.2 0 3.08' slm:eulerrotation='0 -88 0'>
+                <Shape>
+                  <slm:prefab group='environment' item='rock1' slm:walkfloor='0'/>
+                  <Appearance>
+                    <Material DEF='grit' diffuseColor='0.5 0.5 0.5'  textureScale='10 20' />
+                   <ImageTexture url='"grit.jpg"' />
+                  </Appearance>
+                </Shape>
+              </Transform>
+               <Transform name='flatstones' scale='0.7 0.01 0.5' translation='0 0.1 0' slm:eulerrotation='0 0 0'>
+                <Shape>
+                  <slm:prefab group='environment' item='rock1' slm:walkfloor='0'/>
+                  <ImageTexture url='"marbleTileclose.png"' />
+                </Shape>
+              </Transform>
+              <Transform name='flatstones' scale='0.7 0.04 0.5' translation='0.2 0.08 3.08' slm:eulerrotation='0 -88 0'>
+                <Shape>
+                  <slm:prefab group='environment' item='rock1' slm:walkfloor='0'/>
+                  <ImageTexture url='"marbleTileclose.png"' />
+                </Shape>
+              </Transform>
+               <Transform name='flatstones' scale='0.7 0.12 0.5' translation='0.2 0 6.08' slm:eulerrotation='0 46 0'>
+                <Shape>
+                  <slm:prefab group='environment' item='rock1' slm:walkfloor='0'/>
+                  <ImageTexture url='"marbleTileclose.png"' />
+                </Shape>
+              </Transform>
+          </Transform>
+           <Transform name='flatstones'  translation='-11.45 -0.92 31.31'  slm:eulerrotation='-8.5 -38 -3.5'>
+              <Transform name='grit' scale='2.6 0.05 1' translation='0.2 0 3.08' slm:eulerrotation='0 -88 0'>
+                <Shape>
+                  <slm:prefab group='environment' item='rock1' slm:walkfloor='0'/>
+                  <Appearance>
+                    <Material DEF='grit' diffuseColor='0.5 0.5 0.5'  textureScale='10 20' />
+                   <ImageTexture url='"grit.jpg"' />
+                  </Appearance>
+                </Shape>
+              </Transform>
+               <Transform name='flatstones' scale='0.7 0.01 0.5' translation='0 0.1 0' slm:eulerrotation='0 0 0'>
+                <Shape>
+                  <slm:prefab group='environment' item='rock1' slm:walkfloor='0'/>
+                  <ImageTexture url='"marbleTileclose.png"' />
+                </Shape>
+              </Transform>
+              <Transform name='flatstones' scale='0.7 0.04 0.5' translation='0.2 0.08 3.08' slm:eulerrotation='0 -88 0'>
+                <Shape>
+                  <slm:prefab group='environment' item='rock1' slm:walkfloor='0'/>
+                  <ImageTexture url='"marbleTileclose.png"' />
+                </Shape>
+              </Transform>
+               <Transform name='flatstones' scale='0.7 0.12 0.5' translation='0.2 0 6.08' slm:eulerrotation='0 46 0'>
+                <Shape>
+                  <slm:prefab group='environment' item='rock1' slm:walkfloor='0'/>
+                  <ImageTexture url='"marbleTileclose.png"' />
+                </Shape>
+              </Transform>
+          </Transform>
+   
+        </Transform>
+
+      <Transform name='floor1' scale='' translation='0 -1 3' slm:eulerrotation='90 0 0'>
+        <Transform name='underfloor' scale='8 0.01 8.5' translation='-1 -2.57 0' slm:eulerrotation='-90 0 0'>
+          <Shape>
+            <cube/>
+           </Shape>
+        </Transform>
+        <Transform name='underfloor' scale='9 0.3 10' translation='-1.6 -3.3 0.3' slm:eulerrotation='-90 0 0'>
+          <Shape>
+            <cube/>
+           </Shape>
+        </Transform>
+         <Transform name='underfloor' scale='8.17 0.3 10' translation='-0.8 -1.59 1.07' slm:eulerrotation='-90 0 0'>
+          <Shape>
+            <cube/>
+           </Shape>
+        </Transform>
+       <Transform name='tilerow'  translation=''>
+           <Transform name='tile' scale='1.996 2.994 0.1' translation=''>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+                <ImageTexture url='"largefloortile.jpg"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+          <Transform name='tile' scale='1.996 2.994 0.1' translation='2 0 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+                <ImageTexture url='"largefloortile.jpg"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+          <Transform name='tile' scale='1.996 2.994 0.1' translation='-2 0 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+                <ImageTexture url='"largefloortile.jpg"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+          <Transform name='tile' scale='1.996 2.994 0.1' translation='-4 0 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+                <ImageTexture url='"largefloortile.jpg"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+        </Transform>
+        <Transform name='tilerow'  translation='0 -3 0'>
+          <Transform name='tile' scale='1.996 2.994 0.1' translation=''>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+                <ImageTexture url='"largefloortile.jpg"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+          <Transform name='tile' scale='1.996 2.994 0.1' translation='2 0 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+                <ImageTexture url='"largefloortile.jpg"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+          <Transform name='tile' scale='1.996 2.994 0.1' translation='-2 0 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+                <ImageTexture url='"largefloortile.jpg"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+          <Transform name='tile' scale='1.996 2.994 0.1' translation='-4 0 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+                <ImageTexture url='"largefloortile.jpg"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+        </Transform>
+      </Transform>
+      <Transform name='border1' translation='3.163 -0.7 -0.31' scale='1 1 2'>
+        <Transform name='block' scale='0.4 1.8 2' translation=''>
+          <Shape>
+            <cube/>
+            <Appearance>
+              <Material DEF='wall' diffuseColor='1 1 1'  textureScale='10 10'/>
+              <ImageTexture url='"whitewall.jpg"' />
+            </Appearance>
+          </Shape>
+        </Transform>
+        <Transform name='top' scale='0.42 0.08 2' translation='0 0.94 0'>
+          <Shape>
+            <cube/>
+            <Appearance>
+              <Material DEF='walltop' diffuseColor='1 1 1' />
+              <ImageTexture url='"marbleTileclose.png"' />
+
+            </Appearance>
+          </Shape>
+        </Transform>
+      </Transform>
+      <Transform name='border2' translation='3.163 -1 3.703' scale='1 1 2'>
+        <Transform name='block' scale='0.4 1.2 2' translation=''>
+          <Shape>
+            <cube/>
+            <Appearance>
+              <Material DEF='wall' diffuseColor='1 1 1'  textureScale='10 10'/>
+              <ImageTexture url='"whitewall.jpg"' />
+            </Appearance>
+          </Shape>
+        </Transform>
+        <Transform name='top' scale='0.42 0.08 2' translation='0 0.64 0'>
+          <Shape>
+            <cube/>
+            <Appearance>
+              <Material DEF='walltop' diffuseColor='1 1 1' />
+              <ImageTexture url='"marbleTileclose.png"' />
+
+            </Appearance>
+          </Shape>
+        </Transform>
+      </Transform>
+
+      <Transform name='block' scale='1.2 3.8 5' translation='2.3 0.2 -4.1'>
+        <Shape>
+          <cube/>
+          <Appearance>
+            <Material DEF='wall' diffuseColor='1 1 1' />
+            <ImageTexture url='"whitewall.jpg"' />
+          </Appearance>
+        </Shape>
+      </Transform>
+      <Transform name='painting' scale='0.02 1.7 1.7' translation='1.706 0.75 -4.1'>
+        <Shape>
+          <cube/>
+          <Appearance>
+            <Material DEF='painting' diffuseColor='1 1 1' />
+              <ImageTexture url='"painting1.jpg"' />
+          </Appearance>
+        </Shape>
+      </Transform>
+      <Transform name='mirrorHolder' scale='1 1 1' translation='-5 1 -1.95' slm:eulerrotation='0 90 0 '>
+        <Shape>
+          <slm:prefab group='various' item='mirror'/>
+        </Shape>
+      </Transform>
+      <Transform name='mirrorHolder' scale='1 2 1' translation='-5.61 1 -2.761' slm:eulerrotation='180 180 0 '>
+        <Shape>
+          <slm:prefab group='various' item='mirror'/>
+        </Shape>
+      </Transform>
+
+      <Transform name='controlHolder' translation='0.4 -0.145 -10'>
+        <Transform name='cone' scale='0.4 0.15 0.4' translation='0 -0.098 0'>
+          <Shape>
+            <slm:prefab group='primitives' item='cone'/>
+            <Appearance>
+              <Material DEF='cone' diffuseColor='1 1 1' />
+            </Appearance>
+          </Shape>
+        </Transform>
+
+        <slm:TreeView3D name='DPtree' parentdistance='0.6' childrendistance='0.5' linestartwidth='0.01' lineendwidth='0.02' linestartcolor='white' lineendcolor='magenta' drift='-0.1 8 0' startlevel='3'>
+          <NodePrefab>
+            <Appearance>
+              <Material DEF='Node'  diffuseColor='0.3 0.3 0.47'/>
+            </Appearance>
+          </NodePrefab>
+          <Node>
+            <Node >
+                <Node >
+                  <Node>
+                  </Node>
+                  <Node>
+                  </Node>
+                  <Node>
+                    <Node>
+                    </Node>
+                    <Node>
+                    </Node>
+                  </Node>
+                </Node>
+                <Node>
+                </Node>
+                <Node>
+                </Node>
+            </Node>
+              <Node>
+              </Node>
+              <Node>
+              </Node>
+              <Node>
+                <Node>
+                </Node>
+                <Node>
+                </Node>
+              </Node>
+            </Node>
+            <Node>
+              <Node>
+                <Node>
+                </Node>
+                <Node>
+                  <Node>
+                  </Node>
+                  <Node>
+                  </Node>
+                  <Node>
+                    <Node>
+                    </Node>
+                    <Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+        </slm:TreeView3D>
+      </Transform>
+
+
+      <Transform name='block2' scale='1.2 4.8 1.5' translation='-5.6 0.77 -2.00'>
+        <Shape>
+          <cube/>
+          <Appearance>
+            <Material DEF='wall' diffuseColor='1 1 1'  textureScale='10 10'/>
+            <ImageTexture url='"whitewall.jpg"' />
+          </Appearance>
+        </Shape>
+      </Transform>
+      <Transform name='block2' scale='1.2 4.8 2.5' translation='-6.142 0.77 -0.463' slm:eulerrotation='0 -30 0'>
+        <Shape>
+          <cube/>
+          <Appearance>
+            <Material DEF='wall' diffuseColor='1 1 1'  textureScale='10 10'/>
+            <ImageTexture url='"whitewall.jpg"' />
+          </Appearance>
+        </Shape>
+      </Transform>
+      <Transform name='block2' scale='1.2 4.8 3.5' translation='-6.78 0.77 2.09'>
+        <Shape>
+          <cube/>
+          <Appearance>
+            <Material DEF='wall' diffuseColor='1 1 1'  textureScale='10 10'/>
+            <ImageTexture url='"whitewall.jpg"' />
+          </Appearance>
+        </Shape>
+      </Transform>
+      <Transform name='block2' scale='1.2 4.8 2.5' translation='-6.142 0.77 4.63' slm:eulerrotation='0 30 0'>
+        <Shape>
+          <cube/>
+          <Appearance>
+            <Material DEF='wall' diffuseColor='1 1 1'  textureScale='10 10'/>
+            <ImageTexture url='"whitewall.jpg"' />
+          </Appearance>
+        </Shape>
+      </Transform>
+      <Transform name='block' scale='1.2 3.8 5' translation='-10.53 0.2 -6'>
+        <Shape>
+          <cube/>
+          <Appearance>
+            <Material DEF='wall' diffuseColor='1 1 1'  textureScale='10 10'/>
+            <ImageTexture url='"whitewall.jpg"' />
+          </Appearance>
+        </Shape>
+      </Transform>
+      <Transform name='painting' scale='0.02 1.7 0.8' translation='-9.92 0.75 -6'>
+        <Shape>
+          <cube/>
+          <Appearance>
+            <Material DEF='painting2' diffuseColor='1 1 1' />
+              <ImageTexture url='"painting2.jpg"' />
+          </Appearance>
+        </Shape>
+      </Transform>
+ 
+
+      <Transform name='smallrocks'  translation='-5.3 -1.1 2'>
+        <Transform name='smallrocksgrandgroup'  translation='0 0 0'>
+          <Transform name='smallrockgroup'  translation='0 0 0'>
+            <Transform name='rock' scale='0.1 0.1 0.1' translation='0 0 0' slm:eulerrotation='0 0 0'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.1 0.14 0.1' translation='-0.089 0 0.386' slm:eulerrotation='30 40 70'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.04 0.09' translation='-0.273 0.064 0.128' slm:eulerrotation='-30 90 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.1 0.09' translation='-0.383 0.163 0.335' slm:eulerrotation='-30 0 12'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.16 0.09' translation='-0.292 0.099 0.777' slm:eulerrotation='-80 250 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+         </Transform>
+          <Transform name='smallrockgroup'  translation='0.15 0 0.39' scale='0.9 1.2 1'  slm:eulerrotation='0 15.615 0'>
+            <Transform name='rock' scale='0.1 0.1 0.1' translation='0 0 0' slm:eulerrotation='0 0 0'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.1 0.14 0.1' translation='-0.089 0 0.386' slm:eulerrotation='30 40 70'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.04 0.09' translation='-0.273 0.064 0.128' slm:eulerrotation='-30 90 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.1 0.09' translation='-0.383 0.163 0.335' slm:eulerrotation='-30 0 12'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.16 0.09' translation='-0.292 0.099 0.777' slm:eulerrotation='-80 250 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+         </Transform>
+          <Transform name='smallrockgroup'  translation='-0.254 -0.11 0.7' scale='1.4 1.2 1.1'  slm:eulerrotation='30 15.615 0'>
+            <Transform name='rock' scale='0.1 0.1 0.1' translation='0 0 0' slm:eulerrotation='0 0 0'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.1 0.14 0.1' translation='-0.089 0 0.386' slm:eulerrotation='30 40 70'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.04 0.09' translation='-0.273 0.064 0.128' slm:eulerrotation='-30 90 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.1 0.09' translation='-0.383 0.163 0.335' slm:eulerrotation='-30 0 12'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.16 0.09' translation='-0.292 0.099 0.777' slm:eulerrotation='-80 250 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+         </Transform>
+      </Transform>
+        <Transform name='smallrocksgrandgroup'  translation='-0.233 -0.232 -1.654' slm:eulerrotation='5 -11 -155'>
+          <Transform name='smallrockgroup'  translation='0 0 0'>
+            <Transform name='rock' scale='0.1 0.1 0.1' translation='0 0 0' slm:eulerrotation='0 0 0'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.1 0.14 0.1' translation='-0.089 0 0.386' slm:eulerrotation='30 40 70'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.04 0.09' translation='-0.273 0.064 0.128' slm:eulerrotation='-30 90 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.1 0.09' translation='-0.383 0.163 0.335' slm:eulerrotation='-30 0 12'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.16 0.09' translation='-0.292 0.099 0.777' slm:eulerrotation='-80 250 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+         </Transform>
+          <Transform name='smallrockgroup'  translation='0.15 0 0.39' scale='0.9 1.2 1'  slm:eulerrotation='0 15.615 0'>
+            <Transform name='rock' scale='0.1 0.1 0.1' translation='0 0 0' slm:eulerrotation='0 0 0'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.1 0.14 0.1' translation='-0.089 0 0.386' slm:eulerrotation='30 40 70'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.04 0.09' translation='-0.273 0.064 0.128' slm:eulerrotation='-30 90 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.1 0.09' translation='-0.383 0.163 0.335' slm:eulerrotation='-30 0 12'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.16 0.09' translation='-0.292 0.099 0.777' slm:eulerrotation='-80 250 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+         </Transform>
+          <Transform name='smallrockgroup'  translation='-0.254 -0.11 0.7' scale='1.4 1.2 1.1'  slm:eulerrotation='30 15.615 0'>
+            <Transform name='rock' scale='0.1 0.1 0.1' translation='0 0 0' slm:eulerrotation='0 0 0'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.1 0.14 0.1' translation='-0.089 0 0.386' slm:eulerrotation='30 40 70'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.04 0.09' translation='-0.273 0.064 0.128' slm:eulerrotation='-30 90 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.1 0.09' translation='-0.383 0.163 0.335' slm:eulerrotation='-30 0 12'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.16 0.09' translation='-0.292 0.099 0.777' slm:eulerrotation='-80 250 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+         </Transform>
+      </Transform>
+        <Transform name='smallrocksgrandgroup'  translation='-0.137 -0.158 -2.8' slm:eulerrotation='8 11 -96'>
+          <Transform name='smallrockgroup'  translation='0 0 0'>
+            <Transform name='rock' scale='0.1 0.1 0.1' translation='0 0 0' slm:eulerrotation='0 0 0'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.1 0.14 0.1' translation='-0.089 0 0.386' slm:eulerrotation='30 40 70'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.04 0.09' translation='-0.273 0.064 0.128' slm:eulerrotation='-30 90 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.1 0.09' translation='-0.383 0.163 0.335' slm:eulerrotation='-30 0 12'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.16 0.09' translation='-0.292 0.099 0.777' slm:eulerrotation='-80 250 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+         </Transform>
+          <Transform name='smallrockgroup'  translation='0.15 0 0.39' scale='0.9 1.2 1'  slm:eulerrotation='0 15.615 0'>
+            <Transform name='rock' scale='0.1 0.1 0.1' translation='0 0 0' slm:eulerrotation='0 0 0'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.1 0.14 0.1' translation='-0.089 0 0.386' slm:eulerrotation='30 40 70'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.04 0.09' translation='-0.273 0.064 0.128' slm:eulerrotation='-30 90 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.1 0.09' translation='-0.383 0.163 0.335' slm:eulerrotation='-30 0 12'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.16 0.09' translation='-0.292 0.099 0.777' slm:eulerrotation='-80 250 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+         </Transform>
+          <Transform name='smallrockgroup'  translation='-0.254 -0.11 0.7' scale='1.4 1.2 1.1'  slm:eulerrotation='30 15.615 0'>
+            <Transform name='rock' scale='0.1 0.1 0.1' translation='0 0 0' slm:eulerrotation='0 0 0'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.1 0.14 0.1' translation='-0.089 0 0.386' slm:eulerrotation='30 40 70'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.04 0.09' translation='-0.273 0.064 0.128' slm:eulerrotation='-30 90 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.1 0.09' translation='-0.383 0.163 0.335' slm:eulerrotation='-30 0 12'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.16 0.09' translation='-0.292 0.099 0.777' slm:eulerrotation='-80 250 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+         </Transform>
+      </Transform>
+        <Transform name='smallrocksgrandgroup'  translation='0.03 0.32 1.33' slm:eulerrotation='22 -5 51'>
+          <Transform name='smallrockgroup'  translation='0 0 0'>
+            <Transform name='rock' scale='0.1 0.1 0.1' translation='0 0 0' slm:eulerrotation='0 0 0'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.1 0.14 0.1' translation='-0.089 0 0.386' slm:eulerrotation='30 40 70'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.04 0.09' translation='-0.273 0.064 0.128' slm:eulerrotation='-30 90 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.1 0.09' translation='-0.383 0.163 0.335' slm:eulerrotation='-30 0 12'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.16 0.09' translation='-0.292 0.099 0.777' slm:eulerrotation='-80 250 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+         </Transform>
+          <Transform name='smallrockgroup'  translation='0.15 0 0.39' scale='0.9 1.2 1'  slm:eulerrotation='0 15.615 0'>
+            <Transform name='rock' scale='0.1 0.1 0.1' translation='0 0 0' slm:eulerrotation='0 0 0'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.1 0.14 0.1' translation='-0.089 0 0.386' slm:eulerrotation='30 40 70'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.04 0.09' translation='-0.273 0.064 0.128' slm:eulerrotation='-30 90 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.1 0.09' translation='-0.383 0.163 0.335' slm:eulerrotation='-30 0 12'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.16 0.09' translation='-0.292 0.099 0.777' slm:eulerrotation='-80 250 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+         </Transform>
+          <Transform name='smallrockgroup'  translation='-0.254 -0.11 0.7' scale='1.4 1.2 1.1'  slm:eulerrotation='30 15.615 0'>
+            <Transform name='rock' scale='0.1 0.1 0.1' translation='0 0 0' slm:eulerrotation='0 0 0'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.1 0.14 0.1' translation='-0.089 0 0.386' slm:eulerrotation='30 40 70'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.04 0.09' translation='-0.273 0.064 0.128' slm:eulerrotation='-30 90 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.1 0.09' translation='-0.383 0.163 0.335' slm:eulerrotation='-30 0 12'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+             <Transform name='rock' scale='0.07 0.16 0.09' translation='-0.292 0.099 0.777' slm:eulerrotation='-80 250 120'>
+              <Shape>
+                <slm:prefab group='environment' item='rock1'/>
+              </Shape>
+            </Transform>
+         </Transform>
+      </Transform>
+     </Transform>
+
+      <Transform name='roof'  translation='-4 3.28 0'>
+
+        <Transform name='roof1' scale='2 0.2 7' translation='6.56 0 -5.17'>
+          <Shape>
+            <slm:prefab group='primitives' item='smoothcube' slm:walkfloor='0' />
+            <Appearance>
+              <Material DEF='Roof' diffuseColor='1 1 1' textureScale='5 20'/>
+              <ImageTexture url='"whitewall.jpg"' />
+            </Appearance>
+          </Shape>
+        </Transform>
+        <Transform name='roof2' scale='3 0.2 7' translation='2.09 1 -5.17'>
+          <Shape>
+            <slm:prefab group='primitives' item='smoothcube' slm:walkfloor='0'/>
+            <Appearance>
+              <Material DEF='Roof' diffuseColor='1 1 1'  textureScale='5 20'/>
+              <ImageTexture url='"whitewall.jpg"' />
+            </Appearance>
+          </Shape>
+        </Transform>
+        <Transform name='roof3' scale='2 0.2 9.25' translation='-2.21 0 -2.95'>
+          <Shape>
+            <slm:prefab group='primitives' item='smoothcube' slm:walkfloor='0'/>
+            <Appearance>
+              <Material DEF='Roof' diffuseColor='1 1 1' textureScale='5 20' />
+              <ImageTexture url='"whitewall.jpg"' />
+            </Appearance>
+          </Shape>
+        </Transform>
+      </Transform>
+
+      <Transform name='stairs'  translation='-1.67 -0.9 -1.714'>
+
+        <Transform name='stair1' scale='7 0.16 0.4' translation='0 0 0'>
+          <Transform name='stair1' scale='1 1 1' translation='0 0 0'>
+            <Shape>
+              <cube/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+              </Appearance>
+            </Shape>
+          </Transform>
+          <Transform name='stairtop1' scale='1 0.3 1.03' translation='0 0.57 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='walltop' diffuseColor='1 1 1' />
+                <ImageTexture url='"marbleTileclose.png"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+        </Transform>
+        <Transform name='stair2' scale='7 0.16 0.4' translation='0 0.2 -0.4'>
+          <Transform name='stair' scale='1 1 1' translation='0 0 0'>
+            <Shape>
+              <cube/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+              </Appearance>
+            </Shape>
+          </Transform>
+          <Transform name='stairtop' scale='1 0.3 1.03' translation='0 0.57 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='walltop' diffuseColor='1 1 1' />
+                <ImageTexture url='"marbleTileclose.png"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+        </Transform>
+        <Transform name='stair3' scale='7 0.16 0.4' translation='0 0.4 -0.8'>
+          <Transform name='stair' scale='1 1 1' translation='0 0 0'>
+            <Shape>
+              <cube/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+              </Appearance>
+            </Shape>
+          </Transform>
+          <Transform name='stairtop' scale='1 0.3 1.03' translation='0 0.57 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='walltop' diffuseColor='1 1 1' />
+                <ImageTexture url='"marbleTileclose.png"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+        </Transform>
+
+      </Transform>
+      <Transform name='highfloor'  translation='-4.09 -0.52 -6.96'>
+          <Transform name='highfloor' scale='12 0.3 8.5' translation='0 0 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='highfloor' diffuseColor='1 1 1' />
+                <ImageTexture url='"wood.jpg"' />
+              </Appearance>
+            </Shape>
+          </Transform> 
+      </Transform>
+     <Transform name='couch'  translation='-4.4 0.15 -9.53' slm:eulerrotation='0 -32 0'>
+           <Transform name='couch' scale='1 0.65 1' translation='0 0 0' slm:eulerrotation='0 0 0'>
+              <Shape>
+                <slm:prefab group='primitives' item='frame'/>
+             <Appearance>
+                <Material DEF='couchlegs' diffuseColor='0 0 0' />
+              </Appearance>
+               </Shape>
+            </Transform>
+          <Transform name='couch' scale='1 0.65 1' translation='0 0 2' slm:eulerrotation='0 0 0'>
+              <Shape>
+                <slm:prefab group='primitives' item='frame'/>
+                 <Appearance>
+                    <Material DEF='couchlegs' diffuseColor='0 0 0' />
+                  </Appearance>
+               </Shape>
+            </Transform>
+         <Transform name='couch' scale='0.737 0.13 1.525' translation='0 0.159 1' slm:eulerrotation='0 0 0'>
+              <Shape>
+                <slm:prefab group='primitives' item='smoothcube2'/>
+                 <Appearance>
+                    <Material DEF='couchlegs' diffuseColor='0 0 0' />
+                  </Appearance>
+               </Shape>
+            </Transform>
+       <Transform name='book' translation='0.263 0.35 0.803' scale='2 2 2' slm:eulerrotation='180 27 0'>
+         <Shape>
+           <slm:prefab group='various' item='openbook'/>
+        
+         </Shape>
+       </Transform>
+
+     </Transform>
+      <Transform name='table' scale='2.3 2.3 2.3'  translation='-4 0.868 -11.4' slm:eulerrotation='0 -13 0'>
+        <Transform name='tableleg1' translation='0.907 -0.443 0.853' scale='0.03349682 0.2093551 0.03349682'>
+          <Shape>
+            <Cube/>
+            <Appearance>
+              <Material DEF='MaterialTableLeg' diffuseColor='0.3 0.3 0.3' />
+              <ImageTexture url='"wood.jpg"' />
+            </Appearance>
+          </Shape>
+        </Transform>
+        <Transform name='tableleg2' translation='0.907 -0.443 1.088' scale='0.03349682 0.2093551 0.03349682'>
+          <Shape>
+            <Cube/>
+            <Appearance>
+              <Material USE='MaterialTableLeg' diffuseColor='1 1 1' />
+              <ImageTexture url='"wood.jpg"' />
+            </Appearance>
+          </Shape>
+        </Transform>
+        <Transform name='tableleg3' translation='0.541 -0.443 1.088' scale='0.03349682 0.2093551 0.03349682'>
+          <Shape>
+            <Cube/>
+            <Appearance>
+              <Material USE='MaterialTableLeg' diffuseColor='1 1 1' />
+              <ImageTexture url='"wood.jpg"' />
+            </Appearance>
+          </Shape>
+        </Transform>
+        <Transform name='tableleg4' translation='0.541 -0.443 0.853' scale='0.03349682 0.2093551 0.03349682'>
+          <Shape>
+            <Cube/>
+            <Appearance>
+              <Material USE='MaterialTableLeg' diffuseColor='1 1 1' />
+              <ImageTexture url='"wood.jpg"' />
+            </Appearance>
+          </Shape>
+        </Transform>
+        <Transform name='tableplate' translation='0.714 -0.332 0.968' scale='0.5 0.04 0.5'>
+          <Shape>
+            <Cube/>
+            <Appearance>
+              <Material USE='MaterialTablePlate' diffuseColor='1 1 1' />
+              <ImageTexture url='"marblered.jpg"' />
+            </Appearance>
+          </Shape>
+        </Transform>
+        <Transform name='soucer' translation='0.714 -0.312 0.968' scale='1 1 1'>
+          <Shape>
+            <slm:prefab group='various' item='saucer'/>
+            <Appearance>
+              <Material USE='CupAndSaucer' diffuseColor='1 1 1' />
+            </Appearance>
+          </Shape>
+        </Transform>
+        <Transform name='cup' translation='0.714 -0.312 0.968' scale='1 1 1'>
+          <Shape>
+            <slm:prefab group='various' item='cup'/>
+            <Appearance>
+              <Material USE='CupAndSaucer' diffuseColor='1 1 1' />
+            </Appearance>
+          </Shape>
+        </Transform>
+        <Transform name='coffee' translation='0.714 -0.2438 0.968' scale='0.093 0.001 0.093'>
+          <Shape>
+            <sphere/>
+            <Appearance>
+              <Material USE='Coffee' diffuseColor='0.3 0.2 0.1' />
+            </Appearance>
+          </Shape>
+        </Transform>
+      </Transform>
+
+      <Transform name='stairs'  translation='-0.97 -1.48 5.48' scale='1.13 1 1'>
+       <Transform name='stairs'  translation='0 0 0'>
+
+          <Transform name='stair1' scale='7 0.16 0.4' translation='0 0 0'>
+            <Transform name='stair1' scale='1 1 1' translation='0 0 0'>
+              <Shape>
+                <cube/>
+                <Appearance>
+                  <Material DEF='Room' diffuseColor='1 1 1' />
+                </Appearance>
+              </Shape>
+            </Transform>
+            <Transform name='stairtop1' scale='1 0.3 1.03' translation='0 0.57 0'>
+              <Shape>
+                <cube slm:walkfloor='0'/>
+                <Appearance>
+                  <Material DEF='walltop' diffuseColor='1 1 1' />
+                  <ImageTexture url='"marbleTileclose.png"' />
+                </Appearance>
+              </Shape>
+            </Transform>
+          </Transform>
+          <Transform name='stair2' scale='7 0.16 0.4' translation='0 0.2 -0.4'>
+            <Transform name='stair' scale='1 1 1' translation='0 0 0'>
+              <Shape>
+                <cube/>
+                <Appearance>
+                  <Material DEF='Room' diffuseColor='1 1 1' />
+                </Appearance>
+              </Shape>
+            </Transform>
+            <Transform name='stairtop' scale='1 0.3 1.03' translation='0 0.57 0'>
+              <Shape>
+                <cube slm:walkfloor='0'/>
+                <Appearance>
+                  <Material DEF='walltop' diffuseColor='1 1 1' />
+                  <ImageTexture url='"marbleTileclose.png"' />
+                </Appearance>
+              </Shape>
+            </Transform>
+          </Transform>
+          <Transform name='stair3' scale='7 0.16 0.4' translation='0 0.4 -0.8'>
+            <Transform name='stair' scale='1 1 1' translation='0 0 0'>
+              <Shape>
+                <cube/>
+                <Appearance>
+                  <Material DEF='Room' diffuseColor='1 1 1' />
+                </Appearance>
+              </Shape>
+            </Transform>
+            <Transform name='stairtop' scale='1 0.3 1.03' translation='0 0.57 0'>
+              <Shape>
+                <cube slm:walkfloor='0'/>
+                <Appearance>
+                  <Material DEF='walltop' diffuseColor='1 1 1' />
+                  <ImageTexture url='"marbleTileclose.png"' />
+                </Appearance>
+              </Shape>
+            </Transform>
+          </Transform>
+
+        </Transform>
+       <Transform name='stairs'  translation='0 -0.58 1.25'>
+
+        <Transform name='stair1' scale='7 0.16 0.4' translation='0 0 0'>
+          <Transform name='stair1' scale='1 1 1' translation='0 0 0'>
+            <Shape>
+              <cube/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+              </Appearance>
+            </Shape>
+          </Transform>
+          <Transform name='stairtop1' scale='1 0.3 1.03' translation='0 0.57 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='walltop' diffuseColor='1 1 1' />
+                <ImageTexture url='"marbleTileclose.png"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+        </Transform>
+        <Transform name='stair2' scale='7 0.16 0.4' translation='0 0.2 -0.4'>
+          <Transform name='stair' scale='1 1 1' translation='0 0 0'>
+            <Shape>
+              <cube/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+              </Appearance>
+            </Shape>
+          </Transform>
+          <Transform name='stairtop' scale='1 0.3 1.03' translation='0 0.57 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='walltop' diffuseColor='1 1 1' />
+                <ImageTexture url='"marbleTileclose.png"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+        </Transform>
+        <Transform name='stair3' scale='7 0.16 0.4' translation='0 0.4 -0.8'>
+          <Transform name='stair' scale='1 1 1' translation='0 0 0'>
+            <Shape>
+              <cube/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+              </Appearance>
+            </Shape>
+          </Transform>
+          <Transform name='stairtop' scale='1 0.3 1.03' translation='0 0.57 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='walltop' diffuseColor='1 1 1' />
+                <ImageTexture url='"marbleTileclose.png"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+        </Transform>
+
+      </Transform>
+       <Transform name='stairs'  translation='0 -1.16 2.5'>
+
+        <Transform name='stair1' scale='7 0.16 0.4' translation='0 0 0'>
+          <Transform name='stair1' scale='1 1 1' translation='0 0 0'>
+            <Shape>
+              <cube/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+              </Appearance>
+            </Shape>
+          </Transform>
+          <Transform name='stairtop1' scale='1 0.3 1.03' translation='0 0.57 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='walltop' diffuseColor='1 1 1' />
+                <ImageTexture url='"marbleTileclose.png"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+        </Transform>
+        <Transform name='stair2' scale='7 0.16 0.4' translation='0 0.2 -0.4'>
+          <Transform name='stair' scale='1 1 1' translation='0 0 0'>
+            <Shape>
+              <cube/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+              </Appearance>
+            </Shape>
+          </Transform>
+          <Transform name='stairtop' scale='1 0.3 1.03' translation='0 0.57 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='walltop' diffuseColor='1 1 1' />
+                <ImageTexture url='"marbleTileclose.png"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+        </Transform>
+        <Transform name='stair3' scale='7 0.16 0.4' translation='0 0.4 -0.8'>
+          <Transform name='stair' scale='1 1 1' translation='0 0 0'>
+            <Shape>
+              <cube/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+              </Appearance>
+            </Shape>
+          </Transform>
+          <Transform name='stairtop' scale='1 0.3 1.03' translation='0 0.57 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='walltop' diffuseColor='1 1 1' />
+                <ImageTexture url='"marbleTileclose.png"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+        </Transform>
+
+      </Transform>
+       <Transform name='stairs'  translation='0 -1.74 3.75'>
+
+        <Transform name='stair1' scale='7 0.16 0.4' translation='0 0 0'>
+          <Transform name='stair1' scale='1 1 1' translation='0 0 0'>
+            <Shape>
+              <cube/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+              </Appearance>
+            </Shape>
+          </Transform>
+          <Transform name='stairtop1' scale='1 0.3 1.03' translation='0 0.57 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='walltop' diffuseColor='1 1 1' />
+                <ImageTexture url='"marbleTileclose.png"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+        </Transform>
+        <Transform name='stair2' scale='7 0.16 0.4' translation='0 0.2 -0.4'>
+          <Transform name='stair' scale='1 1 1' translation='0 0 0'>
+            <Shape>
+              <cube/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+              </Appearance>
+            </Shape>
+          </Transform>
+          <Transform name='stairtop' scale='1 0.3 1.03' translation='0 0.57 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='walltop' diffuseColor='1 1 1' />
+                <ImageTexture url='"marbleTileclose.png"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+        </Transform>
+        <Transform name='stair3' scale='7 0.16 0.4' translation='0 0.4 -0.8'>
+          <Transform name='stair' scale='1 1 1' translation='0 0 0'>
+            <Shape>
+              <cube/>
+              <Appearance>
+                <Material DEF='Room' diffuseColor='1 1 1' />
+              </Appearance>
+            </Shape>
+          </Transform>
+          <Transform name='stairtop' scale='1 0.3 1.03' translation='0 0.57 0'>
+            <Shape>
+              <cube slm:walkfloor='0'/>
+              <Appearance>
+                <Material DEF='walltop' diffuseColor='1 1 1' />
+                <ImageTexture url='"marbleTileclose.png"' />
+              </Appearance>
+            </Shape>
+          </Transform>
+        </Transform>
+
+      </Transform>
+
+      </Transform>
+
+    </Transform>
+
+
+
+  </Scene>
+</X3D>
